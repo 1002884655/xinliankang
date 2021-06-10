@@ -1,0 +1,26 @@
+.components.ColumnTitle {
+  align-items: center;
+  padding: 0 30px;
+  margin-top: 40px;
+  > text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    line-height: 40px;
+    &.iconfont {
+      font-size: 40px;
+      font-weight: normal;
+      margin-right: 20px;
+    }
+  }
+  > .More {
+    white-space: nowrap;
+    font-size: 0;
+    > text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 24px;
+      line-height: 40px;
+    }
+  }
+}

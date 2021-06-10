@@ -1,0 +1,60 @@
+.components.HotRecommend {
+  position: relative;
+  overflow: visible;
+  padding: 0 30px;
+  margin-top: 40px;
+  > view {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 32px 0px rgba(5, 83, 156, 0.04);
+    > .Menu {
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.08);
+      > view {
+        font-size: 30px;
+        line-height: 70px;
+        text-align: center;
+        font-weight: bold;
+        &.active {
+          color: #193c83;
+          background: rgba(0, 0, 0, 0.08);
+        }
+      }
+    }
+    > .Content {
+      box-sizing: border-box;
+      border: 2px solid #eee;
+      padding: 20px;
+      > .flex-h {
+        align-items: center;
+        > .flex-item {
+          font-size: 32px;
+          color: #193c83;
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-right: 20px;
+          & + text {
+            font-size: 30px;
+            color: #193c83;
+            line-height: 60px;
+            box-sizing: border-box;
+            border: 2px solid #193c83;
+            border-radius: 30px;
+            width: 144px;
+            text-align: center;
+          }
+        }
+      }
+      >text {
+        font-size: 28px;
+        line-height: 40px;
+        display: block;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

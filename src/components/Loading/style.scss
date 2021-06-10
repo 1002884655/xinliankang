@@ -1,0 +1,22 @@
+
+.loading {
+  margin: 0 auto;
+  position: relative;
+
+  &-logo {
+    position: absolute;
+    left: 0;
+    transform: scale(.75, .75);
+    animation: logo-opacity 2s linear infinite;
+  }
+}
+
+@keyframes logo-opacity {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .4;
+  }
+}
