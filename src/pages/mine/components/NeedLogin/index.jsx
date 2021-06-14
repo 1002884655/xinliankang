@@ -7,7 +7,7 @@ export default function Banner (props) {
   return (
     <view className='components NeedLogin flex-v'>
       <view className='Logo'>
-        <Image mode='aspectFill' className='centerLabel' src={null} />
+        <Image mode='aspectFit' className='centerLabel' src={require('../../../../assets/logo.png')} />
       </view>
       <view className='LoginBtn'>
         <text>微信登录</text>

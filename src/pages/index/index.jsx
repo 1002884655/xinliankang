@@ -14,23 +14,6 @@ export default withLayout((props) => {
 
   // const [PageProps] = useState(props)
   const [BannerList, setBannerList] = useState(['', '', ''])
-  const [MenuList, setMenuList] = useState([
-    { name: '全部楼盘', id: 1, icon: '', router: '' },
-    { name: '品牌地产', id: 2, icon: '', router: '' },
-    { name: '近期开盘', id: 3, icon: '', router: '' },
-    { name: '帮我找房', id: 4, icon: '', router: '' },
-    { name: '增值服务', id: 5, icon: '', router: '' },
-    { name: '地图找房', id: 6, icon: '', router: '' },
-    { name: '活动信息', id: 7, icon: '', router: '' },
-    { name: '团房信息', id: 8, icon: '', router: '' },
-    { name: '特价房', id: 9, icon: '', router: '' },
-    { name: '康养', id: 10, icon: '', router: '' },
-    { name: '文旅商办', id: 11, icon: '', router: '' },
-    { name: '新闻资讯', id: 12, icon: '', router: '' },
-    { name: '购房百科', id: 13, icon: '', router: '' },
-    { name: '房贷计算', id: 14, icon: '', router: '' }
-  ])
-  const [SubBannerList, setSubBannerList] = useState(['', '', ''])
   const [ProjectList, setProjectList] = useState(['', '', ''])
   const [IsPull, setPull] = useState(false)
   const [PullTimer, setPullTimer] = useState(null)
@@ -70,7 +53,7 @@ export default withLayout((props) => {
 
           {/* 菜单 */}
           <view className='Menu'>
-            <Menu List={MenuList}></Menu>
+            <Menu></Menu>
           </view>
 
           {/* 热门推荐 */}

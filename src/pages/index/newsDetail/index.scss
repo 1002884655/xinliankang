@@ -1,0 +1,12 @@
+.Page.newsDetail {
+  background: #fff;
+  > scroll-view {
+    width: 100%;
+    height: 100%;
+    .PageContent {
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+  }
+}

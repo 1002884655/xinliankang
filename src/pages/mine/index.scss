@@ -127,15 +127,18 @@
                   border: none;
                 }
               }
-              > text {
+              > .Icon {
                 width: 44px;
-                line-height: 44px;
                 height: 44px;
-                font-size: 40px;
-                text-align: center;
                 margin-right: 20px;
+                position: relative;
+                overflow: hidden;
+                >image {
+                  width: 100%;
+                  height: 100%;
+                }
               }
-              > view {
+              > .flex-h {
                 align-items: center;
                 border-top: 2px solid #eee;
                 > text {

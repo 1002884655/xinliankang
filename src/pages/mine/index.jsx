@@ -4,30 +4,13 @@ import './index.scss'
 import NeedLogin from './components/NeedLogin'
 import { ScrollView, Image } from '@tarojs/components'
 import '../../assets/css/iconfont.css'
+import MineMenuList from './tabData'
 
 export default withLayout((props) => {
 
   // const [PageProps] = useState(props)
-  const [MenuList, setMenuList] = useState([
-    [
-      { name: '添加客户', icon: '', router: '' },
-      { name: '我的主页', icon: '', router: '' },
-      { name: '我的推广码', icon: '', router: '' },
-      { name: '客户分析', icon: '', router: '' },
-      { name: '盘客工具', icon: '', router: '' }
-    ],
-    [
-      { name: '我的分享', icon: '', router: '' },
-      { name: '我的活动', icon: '', router: '' },
-      { name: '我的课堂', icon: '', router: '' },
-      { name: '我的收藏', icon: '', router: '' }
-    ],
-    [
-      { name: '房贷计算器', icon: '', router: '' },
-      { name: '购房百科', icon: '', router: '' },
-      { name: '意见反馈', icon: '', router: '' }
-    ]
-  ])
+  const UserRole = 1 // 1-普通用户 2-经纪人 3-置业顾问 4-驻场管理
+  const [MenuList, setMenuList] = useState(UserRole === 1 ? MineMenuList.User : UserRole === 2 ? MineMenuList.Broker : UserRole === 3 ? MineMenuList.Adviser : MineMenuList.Resident)
   const [IsPull, setPull] = useState(false)
   const [ShowLogin, setShowLogin] = useState(false)
   const [PullTimer, setPullTimer] = useState(null)
@@ -65,7 +48,7 @@ export default withLayout((props) => {
               {/* 用户信息 */}
               <view className='UserInfo'>
                 <view className='UserIcon'>
-                  <Image mode='aspectFill' className='centerLabel' src={null} />
+                  <Image mode='aspectFill' className='centerLabel' src={require('../../assets/mine-icon18.png')} />
                 </view>
                 <view className='OtherInfo'>
                   <view className='Name'>
@@ -76,7 +59,7 @@ export default withLayout((props) => {
                         <text>个人信息资料修改</text>
                       </view>
                     </view>
-                    <text className='Role'>置业顾问</text>
+                    <text className='Role'>{UserRole === 1 ? '客户' : UserRole === 2 ? '经纪人' : UserRole === 3 ? '置业顾问' : '驻场管理'}</text>
                     <text className='New'>NEW</text>
                     <text className='iconfont icon-diqiu'></text>
                   </view>
@@ -91,7 +74,9 @@ export default withLayout((props) => {
                       {
                         item.map((subItem, subIndex) => (
                           <view key={`MenuItem-${index}-${subIndex}`} className='flex-h'>
-                            <text className={`iconfont ${subItem.icon}`}></text>
+                            <view className='Icon'>
+                              <Image mode='aspectFit' className='centerLabel' src={subItem.icon} />
+                            </view>
                             <view className='flex-item flex-h'>
                               <text className='flex-item'>{subItem.name}</text>
                               <text className='iconfont icon-jiantouright'></text>
