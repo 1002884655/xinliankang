@@ -5,12 +5,6 @@ const routes = [
    *  Tab 页面
    *********************************/
   {
-    name: '合作渠道',
-    page: 'pages/mine/partnerChannel/index',
-    pkg: 'main',
-    type: 'mine',
-  },
-  {
     name: '首页',
     page: 'pages/index/index',
     pkg: 'main',
@@ -177,6 +171,12 @@ const routes = [
     type: 'mine',
   },
   {
+    name: '我的课堂',
+    page: 'pages/mine/myCourse/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
     name: '我的活动',
     page: 'pages/mine/myActivity/index',
     pkg: 'main',
@@ -189,8 +189,26 @@ const routes = [
     type: 'mine',
   },
   {
+    name: '客户详情',
+    page: 'pages/mine/myCustomerDetail/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
     name: '我的收藏',
     page: 'pages/mine/myCollect/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '合作渠道',
+    page: 'pages/mine/partnerChannel/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '添加客户',
+    page: 'pages/mine/addCustomer/index',
     pkg: 'main',
     type: 'mine',
   },

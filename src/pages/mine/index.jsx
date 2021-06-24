@@ -10,7 +10,7 @@ import Taro from '@tarojs/taro'
 export default withLayout((props) => {
 
   // const [PageProps] = useState(props)
-  const UserRole = 1 // 1-普通用户 2-经纪人 3-置业顾问 4-驻场管理
+  const UserRole = 2 // 1-普通用户 2-经纪人 3-置业顾问 4-驻场管理
   const [MenuList, setMenuList] = useState(UserRole === 1 ? MineMenuList.User : UserRole === 2 ? MineMenuList.Broker : UserRole === 3 ? MineMenuList.Adviser : MineMenuList.Resident)
   const [IsPull, setPull] = useState(false)
   const [ShowLogin, setShowLogin] = useState(false)

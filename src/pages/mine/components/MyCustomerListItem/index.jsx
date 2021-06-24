@@ -5,7 +5,7 @@ import Taro from '@tarojs/taro'
 export default function MyCustomerListItem (props) {
   const { Data = {} } = props
   return (
-    <view className='components MyCustomerListItem flex-h' onClick={() => { Taro.navigateTo({ url: `/pages/index/activityDetail/index?id=${Data.id}` }) }}>
+    <view className='components MyCustomerListItem flex-h' onClick={() => { Taro.navigateTo({ url: `/pages/mine/myCustomerDetail/index?id=${Data.id}` }) }}>
       <view className='Img'>
         {
           Data.img &&

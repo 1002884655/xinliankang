@@ -100,6 +100,25 @@ export default withLayout((props) => {
             </view>
           </view>
 
+          {/* 销售趋势 */}
+          <view className='SaleLineChart'>
+            <view className='Top flex-h'>
+              <text>销售趋势</text>
+              <view className='flex-item'></view>
+              <view className='Type'>
+                <text>新增客户</text>
+                <text className='iconfont icon-sanjiaoxingdown'></text>
+              </view>
+              <view className='Sort'>
+                <text>按天</text>
+                <text className='iconfont icon-sanjiaoxingdown'></text>
+              </view>
+            </view>
+            <view className='LineChart'>
+              
+            </view>
+          </view>
+
         </view>
       </ScrollView>
     </view>

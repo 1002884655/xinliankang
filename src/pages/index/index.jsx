@@ -9,6 +9,7 @@ import LiveSale from './components/LiveSale/index'
 import ColumnTitle from './components/ColumnTitle/index'
 import ProjectListItem from '../../components/ProjectListItem/index'
 import { ScrollView } from '@tarojs/components'
+import Taro from '@tarojs/taro'
 
 export default withLayout((props) => {
 
@@ -64,13 +65,13 @@ export default withLayout((props) => {
 
           {/* 直播购房 */}
           <view className='LiveSale'>
-            <ColumnTitle Name='直播购房' Icon="icon-yinpin" ShowMore={true}></ColumnTitle>
+            <ColumnTitle Name='直播购房' Icon="icon-yinpin" ShowMore={true} ToMore={() => { Taro.switchTab({ url: `/pages/video/index` }) }}></ColumnTitle>
             <LiveSale></LiveSale>
           </view>
 
           {/* 全部项目 */}
           <view className='AllProject'>
-            <ColumnTitle Name='全部项目' Icon="icon-aixin" ShowMore={true}></ColumnTitle>
+            <ColumnTitle Name='全部项目' Icon="icon-aixin" ShowMore={true} ToMore={() => { Taro.navigateTo({ url: `/pages/index/buildingList/index` }) }}></ColumnTitle>
             <view className='ProjectList'>
               {
                 ProjectList.map((item, index) => (

@@ -23,7 +23,7 @@ const MineMenuList = {
       { name: '我的客户', icon: require('../../assets/mine-icon15.png'), router: '/pages/mine/myCustomer/index' },
       { name: '我的分享', icon: require('../../assets/mine-icon9.png'), router: '/pages/mine/myShare/index' },
       { name: '我的活动', icon: require('../../assets/mine-icon10.png'), router: '/pages/mine/myActivity/index' },
-      { name: '我的课堂', icon: require('../../assets/mine-icon12.png'), router: '' },
+      { name: '我的课堂', icon: require('../../assets/mine-icon12.png'), router: '/pages/mine/myCourse/index' },
       { name: '我的收藏', icon: require('../../assets/mine-icon13.png'), router: '/pages/mine/myCollect/index' }
     ],
     [
@@ -34,7 +34,7 @@ const MineMenuList = {
   ],
   Adviser: [ // 置业顾问
     [
-      { name: '添加客户', icon: require('../../assets/mine-icon7.png'), router: '' },
+      { name: '添加客户', icon: require('../../assets/mine-icon7.png'), router: '/pages/mine/addCustomer/index' },
       { name: '我的主页', icon: require('../../assets/mine-icon15.png'), router: '' },
       { name: '我的推广码', icon: require('../../assets/mine-icon14.png'), router: '' },
       { name: '客户分析', icon: require('../../assets/mine-icon5.png'), router: '' },
@@ -43,7 +43,7 @@ const MineMenuList = {
     [
       { name: '我的分享', icon: require('../../assets/mine-icon9.png'), router: '/pages/mine/myShare/index' },
       { name: '我的活动', icon: require('../../assets/mine-icon10.png'), router: '/pages/mine/myActivity/index' },
-      { name: '我的课堂', icon: require('../../assets/mine-icon12.png'), router: '' },
+      { name: '我的课堂', icon: require('../../assets/mine-icon12.png'), router: '/pages/mine/myCourse/index' },
       { name: '我的收藏', icon: require('../../assets/mine-icon13.png'), router: '/pages/mine/myCollect/index' }
     ],
     [

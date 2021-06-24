@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '活动列表'
+  navigationBarTitleText: '活动'
 }

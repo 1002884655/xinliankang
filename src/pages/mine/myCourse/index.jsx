@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
+import withLayout from '@/layout'
 import './index.scss'
 import { ScrollView } from '@tarojs/components'
-import ActivityListItem from '../components/ActivityListItem/index'
+import '../../../assets/css/iconfont.css'
+import MyCourseListItem from '../components/MyCourseListItem/index'
 
-export default function MyCollectForActivity (props) {
-  const { Data = {} } = props
+export default withLayout((props) => {
+
+  // const [PageProps] = useState(props)
   const [PageList, setPageList] = useState(['', '', '', '', '', '', '', '', '', '', '', '', ''])
   const [IsPull, setPull] = useState(false)
   const [PullTimer, setPullTimer] = useState(null)
@@ -23,13 +26,14 @@ export default function MyCollectForActivity (props) {
   }, [IsPull])
 
   return (
-    <view className='components activityList'>
-      <ScrollView scroll-y={true} refresher-enabled={true} refresher-triggered={IsPull} onrefresherrefresh={PageRefresh} refresher-background='#f8f8f8'>
+    <view className='Page myCourse'>
+
+      <ScrollView scroll-y={true} refresher-enabled={true} refresher-triggered={IsPull} onrefresherrefresh={PageRefresh} refresher-background='#fff'>
         <view className='PageContent'>
           <view className='List'>
             {
               PageList.map((item, index) => (
-                <ActivityListItem Data={item} key={`ActivityListItem-${index}`}></ActivityListItem>
+                <MyCourseListItem Data={item} key={`MyCourseListItem-${index}`}></MyCourseListItem>
               ))
             }
           </view>
@@ -38,8 +42,10 @@ export default function MyCollectForActivity (props) {
           <view className='PageBottom'>
             <text>已经到底了~</text>
           </view>
+
         </view>
       </ScrollView>
+
     </view>
   )
-}
+})

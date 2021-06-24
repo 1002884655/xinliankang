@@ -7,7 +7,7 @@
       position: relative;
       overflow: visible;
       min-height: 100vh;
-      padding: 0 30px;
+      padding: 0 30px 30px;
       >view {
         box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.03);
         position: relative;
@@ -168,6 +168,42 @@
                 }
               }
             }
+          }
+        }
+        &.SaleLineChart {
+          >.Top {
+            align-items: center;
+            margin-top: 40px;
+            padding: 0 20px;
+            >text {
+              font-size: 24px;
+              color: #333;
+              &:first-child {
+                font-size: 34px;
+                font-weight: bold;
+                line-height: 1;
+              }
+            }
+            >.Type,
+            >.Sort {
+              font-size: 0;
+              white-space: nowrap;
+              margin-left: 20px;
+              >text {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 30px;
+                &.iconfont {
+                  font-size: 20px;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+          >.LineChart {
+            height: 460px;
+            position: relative;
+            overflow: hidden;
           }
         }
       }
