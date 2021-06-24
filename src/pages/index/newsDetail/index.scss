@@ -1,12 +1,116 @@
 .Page.newsDetail {
   background: #fff;
-  > scroll-view {
-    width: 100%;
-    height: 100%;
-    .PageContent {
-      position: relative;
+  >.flex-item {
+    position: relative;
+    z-index: 1;
+    >view {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
       overflow: hidden;
-      min-height: 100vh;
+      > scroll-view {
+        width: 100%;
+        height: 100%;
+        .PageContent {
+          position: relative;
+          overflow: hidden;
+          min-height: 100vh;
+          >.Info {
+            padding: 0 30px;
+            position: relative;
+            overflow: visible;
+            margin-top: 30px;
+            >view {
+              background: #fff;
+              position: relative;
+              overflow: hidden;
+              box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.03);
+              padding: 20px;
+              >.Title {
+                display: block;
+                font-size: 34px;
+                font-weight: bold;
+                color: #333;
+                line-height: 40px;
+              }
+              >view {
+                font-size: 0;
+                white-space: nowrap;
+                margin-top: 30px;
+                >text {
+                  display: inline-block;
+                  vertical-align: middle;
+                  font-size: 28px;
+                  color: #333;
+                  margin-left: 40px;
+                  &:first-child {
+                    margin-left: 0;
+                  }
+                }
+              }
+              >.Time {
+                display: block;
+                font-size: 28px;
+                color: #333;
+                margin-top: 20px;
+              }
+              >.Share {
+                display: block;
+                text-align: center;
+                font-size: 32px;
+                line-height: 92px;
+                background: #F2F2F2;
+                border-radius: 92px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+              }
+            }
+          }
+          >.Content {
+            padding: 0 30px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+  >.Bottom {
+    font-size: 0;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.03);
+    text-align: center;
+    padding: 20px 0;
+    >view {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 74px;
+      &:first-child {
+        margin-left: 0;
+      }
+      >image {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+      }
+      >text {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 40px;
+        &:first-child {
+          margin-top: 0;
+          font-size: 44px;
+        }
+      }
     }
   }
 }

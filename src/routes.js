@@ -5,6 +5,12 @@ const routes = [
    *  Tab 页面
    *********************************/
   {
+    name: '合作渠道',
+    page: 'pages/mine/partnerChannel/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
     name: '首页',
     page: 'pages/index/index',
     pkg: 'main',
@@ -19,7 +25,7 @@ const routes = [
     type: 'other',
   },
   {
-    name: '聊天',
+    name: '消息',
     page: 'pages/chat/index',
     pkg: 'main',
     isTab: true,
@@ -133,10 +139,66 @@ const routes = [
     type: 'building',
   },
   {
+    name: '百科详情',
+    page: 'pages/index/encyDetail/index',
+    pkg: 'main',
+    type: 'building',
+  },
+  {
     name: '房贷计算',
     page: 'pages/index/mortgageCalculation/index',
     pkg: 'main',
     type: 'building',
+  },
+
+  // 我的
+  {
+    name: '基本信息',
+    page: 'pages/mine/userInfo/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '推荐客户',
+    page: 'pages/mine/recommendUser/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '报备客户',
+    page: 'pages/mine/reportUser/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '我的分享',
+    page: 'pages/mine/myShare/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '我的活动',
+    page: 'pages/mine/myActivity/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '我的客户',
+    page: 'pages/mine/myCustomer/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '我的收藏',
+    page: 'pages/mine/myCollect/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '意见反馈',
+    page: 'pages/mine/feedBack/index',
+    pkg: 'main',
+    type: 'mine',
   },
 
 ]

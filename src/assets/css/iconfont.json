@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "9055670",
+      "name": "勾",
+      "font_class": "gou",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "13312722",
+      "name": "帮 助",
+      "font_class": "bangzhu",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    },
+    {
+      "icon_id": "9664796",
+      "name": "收 藏",
+      "font_class": "shoucang1",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "1984404",
+      "name": "排序",
+      "font_class": "paixu",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "12198242",
+      "name": "三角形",
+      "font_class": "sanjiaoxingdown",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "22258201",
+      "name": "三角形",
+      "font_class": "sanjiaoxingup",
+      "unicode": "e890",
+      "unicode_decimal": 59536
+    },
+    {
       "icon_id": "11745026",
       "name": "编辑",
       "font_class": "bianji",

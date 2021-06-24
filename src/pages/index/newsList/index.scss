@@ -7,6 +7,22 @@
       position: relative;
       overflow: hidden;
       min-height: 100vh;
+      padding: 0 30px;
+      >view {
+        margin-top: 30px;
+      }
+      > .PageBottom {
+        text-align: center;
+        font-size: 0;
+        white-space: nowrap;
+        > text {
+          display: inline-block;
+          font-size: 28px;
+          color: #666;
+          line-height: 40px;
+          margin: 20px auto;
+        }
+      }
     }
   }
 }

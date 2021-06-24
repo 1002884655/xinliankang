@@ -3,6 +3,7 @@ import withLayout from '@/layout'
 import './index.scss'
 import { ScrollView } from '@tarojs/components'
 import '../../../assets/css/iconfont.css'
+import ProjectListItem from '../../../components/ProjectListItem/index'
 
 export default withLayout((props) => {
 
@@ -25,20 +26,58 @@ export default withLayout((props) => {
   }, [IsPull])
 
   return (
-    <view className='Page buildingList'>
+    <view className='Page buildingList flex-v'>
 
-      <ScrollView scroll-y={true} refresher-enabled={true} refresher-triggered={IsPull} onrefresherrefresh={PageRefresh} refresher-background='#fff'>
-        <view className='PageContent'>
-
-          楼盘列表
-
-          {/* bottom */}
-          <view className='PageBottom'>
-            <text>已经到底了~</text>
-          </view>
-
+      <view className='Search'>
+        <view>
+          <text className='iconfont icon-sousuo'></text>
+          <text>输入项目名称或直播标题</text>
         </view>
-      </ScrollView>
+      </view>
+
+      <view className='Filter'>
+        <view className='flex-h'>
+          <view className='flex-item'>
+            <text>区域</text>
+            <text className='iconfont icon-sanjiaoxingdown'></text>
+          </view>
+          <view className='flex-item'>
+            <text>价格</text>
+            <text className='iconfont icon-sanjiaoxingdown'></text>
+          </view>
+          <view className='flex-item'>
+            <text>户型</text>
+            <text className='iconfont icon-sanjiaoxingdown'></text>
+          </view>
+          <view className='flex-item'>
+            <text>更多</text>
+            <text className='iconfont icon-sanjiaoxingdown'></text>
+          </view>
+          <text className='iconfont icon-paixu Sort'></text>
+        </view>
+      </view>
+
+      <view className='flex-item'>
+        <view>
+          <ScrollView scroll-y={true} refresher-enabled={true} refresher-triggered={IsPull} onrefresherrefresh={PageRefresh} refresher-background='#fff'>
+            <view className='PageContent'>
+              <view className='ProjectList'>
+                {
+                  PageList.map((item, index) => (
+                    <ProjectListItem Data={item} key={`ProjectListItem-${index}`}></ProjectListItem>
+                  ))
+                }
+              </view>
+
+              {/* bottom */}
+              <view className='PageBottom'>
+                <text>已经到底了~</text>
+              </view>
+
+            </view>
+          </ScrollView>
+        </view>
+      </view>
 
     </view>
   )

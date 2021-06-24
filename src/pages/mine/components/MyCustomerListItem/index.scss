@@ -1,0 +1,52 @@
+.components.MyCustomerListItem {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  align-items: center;
+  >.Img {
+    width: 92px;
+    height: 92px;
+    min-width: 92px;
+    background: #eee;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    >image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  >.flex-item {
+    position: relative;
+    overflow: hidden;
+    margin-left: 30px;
+    >view {
+      align-items: center;
+      &.Name {
+        >text {
+          font-size: 20px;
+          color: #999;
+          white-space: nowrap;
+          line-height: 1;
+          &:first-child {
+            font-size: 32px;
+            color: #333;
+          }
+        }
+      }
+      &.Time {
+        margin-top: 16px;
+        >text {
+          font-size: 28px;
+          color: #666;
+          white-space: nowrap;
+          line-height: 1;
+          &.active {
+            color: #193C83;
+          }
+        }
+      }
+    }
+  }
+}

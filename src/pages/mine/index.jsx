@@ -5,6 +5,7 @@ import NeedLogin from './components/NeedLogin'
 import { ScrollView, Image } from '@tarojs/components'
 import '../../assets/css/iconfont.css'
 import MineMenuList from './tabData'
+import Taro from '@tarojs/taro'
 
 export default withLayout((props) => {
 
@@ -27,6 +28,14 @@ export default withLayout((props) => {
       }, 2000))
     }
   }, [IsPull])
+
+  const MenuClick = (router) => {
+    return () => {
+      if (router) {
+        Taro.navigateTo({ url: router })
+      }
+    }
+  }
 
   return (
     <view className='Page Mine'>
@@ -55,8 +64,8 @@ export default withLayout((props) => {
                     <view>
                       <text>用户姓名</text>
                       <view>
-                        <text className='iconfont icon-bianji'></text>
-                        <text>个人信息资料修改</text>
+                        <text className='iconfont icon-bianji' onClick={() => { Taro.navigateTo({ url: `/pages/mine/userInfo/index` }) }}></text>
+                        <text onClick={() => { Taro.navigateTo({ url: `/pages/mine/userInfo/index` }) }}>个人信息资料修改</text>
                       </view>
                     </view>
                     <text className='Role'>{UserRole === 1 ? '客户' : UserRole === 2 ? '经纪人' : UserRole === 3 ? '置业顾问' : '驻场管理'}</text>
@@ -73,7 +82,7 @@ export default withLayout((props) => {
                     <view>
                       {
                         item.map((subItem, subIndex) => (
-                          <view key={`MenuItem-${index}-${subIndex}`} className='flex-h'>
+                          <view key={`MenuItem-${index}-${subIndex}`} className='flex-h' onClick={MenuClick(subItem.router)}>
                             <view className='Icon'>
                               <Image mode='aspectFit' className='centerLabel' src={subItem.icon} />
                             </view>

@@ -1,0 +1,109 @@
+.components.MyShareListItem {
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  > .Img {
+    width: 260px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+    > view {
+      width: 100%;
+      padding-bottom: 60%;
+      background: #eee;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      > image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  > .flex-item {
+    > .Name {
+      align-items: center;
+      > .flex-item {
+        margin-right: 10px;
+        > text {
+          display: block;
+          font-size: 28px;
+          font-weight: bold;
+          color: #000;
+          line-height: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      > text {
+        font-size: 24px;
+        line-height: 40px;
+        color: #000;
+        &:last-child {
+          color: red;
+        }
+      }
+    }
+    >.Price {
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: bold;
+      margin-top: 8px;
+      >text {
+        color: #FC2C2C;
+      }
+    }
+    > .Address {
+      display: block;
+      font-size: 22px;
+      color: #666;
+      line-height: 28px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 8px;
+    }
+    > .ShareInfo {
+      font-size: 0;
+      white-space: nowrap;
+      margin-top: 10px;
+      > text {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24px;
+        color: #333;
+        line-height: 40px;
+        margin-left: 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      > .Users {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        white-space: nowrap;
+        > view {
+          display: inline-block;
+          vertical-align: middle;
+          width: 40px;
+          height: 40px;
+          background: #eee;
+          border-radius: 100%;
+          margin-left: -10px;
+          position: relative;
+          &:nth-child(1) {
+            z-index: 1;
+            margin-left: 0;
+          }
+          &:nth-child(2) {
+            z-index: 2;
+          }
+          &:nth-child(3) {
+            z-index: 3;
+          }
+        }
+      }
+    }
+  }
+}

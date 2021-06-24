@@ -7,6 +7,68 @@
       position: relative;
       overflow: hidden;
       min-height: 100vh;
+      > view {
+        position: relative;
+        overflow: hidden;
+        &:first-child {
+          margin-top: 30px;
+        }
+        > text {
+          display: block;
+          font-size: 34px;
+          font-weight: bold;
+          color: #333;
+          line-height: 40px;
+          text-indent: 30px;
+        }
+        > view {
+          padding: 0 30px;
+          position: relative;
+          overflow: hidden;
+          margin-top: 20px;
+        }
+        > .Demand {
+          align-items: center;
+          > view {
+            box-sizing: border-box;
+            border: 2px solid #333;
+            border-radius: 8px;
+            margin-left: 30px;
+            position: relative;
+            overflow: hidden;
+            padding: 0 20px;
+            &:first-child {
+              margin-left: 0;
+            }
+            &.active {
+              border-color: #193c83;
+              > text {
+                color: #193c83;
+              }
+            }
+            > image {
+              width: 24px;
+              height: 24px;
+              display: block;
+              margin: 10px auto 0;
+            }
+            > text {
+              font-size: 30px;
+              line-height: 30px;
+              display: block;
+              text-align: center;
+              margin-top: 10px;
+              &:last-child {
+                font-size: 24px;
+                font-weight: bold;
+                color: #ccc;
+                padding: 6px 0;
+                border-top: 2px solid #eee;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,153 @@
+.components.HousePurchasing {
+  position: relative;
+  overflow: hidden;
+  margin-top: 0 !important;
+  z-index: 1;
+  > .Step {
+    position: relative;
+    overflow: hidden;
+    > view {
+      position: relative;
+      overflow: hidden;
+      margin-top: 30px;
+      > text {
+        display: block;
+        font-size: 34px;
+        font-weight: bold;
+        color: #333;
+        line-height: 40px;
+      }
+      > view {
+        position: relative;
+        overflow: hidden;
+        margin-top: 20px;
+      }
+      > .Area {
+        > view {
+          align-items: center;
+          background: #f8f8f8;
+          border-radius: 12px;
+          padding: 24px 20px;
+          > text {
+            font-size: 26px;
+            color: #333;
+            line-height: 40px;
+            margin-left: 20px;
+            &:first-child {
+              margin-left: 0;
+              color: #193c83;
+            }
+          }
+        }
+      }
+      > .Purpose {
+        > view {
+          align-items: center;
+          background: #f8f8f8;
+          border-radius: 12px;
+          padding: 24px 20px;
+          > input {
+            font-size: 26px;
+            color: #333;
+            line-height: 40px;
+            display: block;
+            width: 100%;
+            background: none;
+          }
+        }
+      }
+      > .CheckList {
+        font-size: 0;
+        margin-top: 0;
+        > view {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 30px;
+          font-weight: bold;
+          color: #333;
+          line-height: 40px;
+          padding: 20px 0;
+          min-width: 194px;
+          box-sizing: border-box;
+          white-space: nowrap;
+          text-align: center;
+          border: 2px solid #193c83;
+          border-radius: 4px;
+          margin-right: 54px;
+          position: relative;
+          overflow: hidden;
+          margin-top: 20px;
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+          &.active {
+            > image {
+              display: block;
+            }
+          }
+          > image {
+            display: none;
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            right: -2px;
+            bottom: -2px;
+          }
+        }
+      }
+      > .PriceRange {
+        > view {
+          align-items: center;
+          background: #f8f8f8;
+          border-radius: 12px;
+          padding: 24px 0;
+          > view {
+            > input {
+              font-size: 26px;
+              color: #333;
+              line-height: 40px;
+              display: block;
+              width: 100%;
+              background: none;
+              text-align: center;
+            }
+          }
+        }
+      }
+      >.Textarea {
+        background: #f8f8f8;
+        border-radius: 12px;
+        padding: 20px;
+        >textarea {
+          font-size: 26px;
+          color: #333;
+          line-height: 40px;
+          display: block;
+          width: 100%;
+          background: none;
+        }
+      }
+    }
+  }
+  >.Btn {
+    padding: 0 30px;
+    margin: 150px auto 60px;
+    > text {
+      display: block;
+      text-align: center;
+      font-size: 32px;
+      line-height: 92px;
+      box-sizing: border-box;
+      border: 2px solid #193c83;
+      color: #193c83;
+      border-radius: 92px;
+      margin-top: 20px;
+      text-indent: 0;
+      font-weight: normal;
+      &.active {
+        background: #193c83;
+        color: #fff;
+      }
+    }
+  }
+}

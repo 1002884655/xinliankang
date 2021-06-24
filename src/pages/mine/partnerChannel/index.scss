@@ -1,0 +1,176 @@
+.Page.partnerChannel {
+  background: #fff;
+  > scroll-view {
+    width: 100%;
+    height: 100%;
+    .PageContent {
+      position: relative;
+      overflow: visible;
+      min-height: 100vh;
+      padding: 0 30px;
+      >view {
+        box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.03);
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 16px;
+        margin-top: 30px;
+        &.Ranking {
+          >.Top {
+            align-items: center;
+            padding: 0 30px;
+            margin-top: 30px;
+            >text {
+              font-size: 34px;
+              color: #333;
+              line-height: 1;
+              font-weight: bold;
+            }
+            >image {
+              height: 34px;
+            }
+          }
+          >.List {
+            position: relative;
+            overflow: visible;
+            margin-top: 30px;
+            >.flex-item {
+              position: relative;
+              overflow: hidden;
+              z-index: 1;
+              &.active {
+                z-index: 2;
+                border-radius: 16px 16px 0 0;
+                box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.03);
+                >image {
+                  margin-top: 30px;
+                }
+                >.Icon {
+                  width: 120px;
+                  height: 120px;
+                  margin-top: 24px;
+                }
+                >.Index {
+                  margin-top: 20px;
+                  >text {
+                    &:first-child {
+                      font-size: 24px;
+                    }
+                  }
+                }
+                >.Num {
+                  margin-top: 30px;
+                  >text {
+                    font-size: 24px;
+                  }
+                }
+              }
+              >image {
+                height: 66px;
+                display: block;
+                margin: 60px auto 0;
+              }
+              >.Icon {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 100%;
+                background: #eee;
+                margin: 34px auto 0;
+              }
+              >.Index {
+                width: 148px;
+                text-align: center;
+                white-space: nowrap;
+                position: relative;
+                overflow: hidden;
+                margin: 30px auto 0;
+                background: #193C83;
+                border-radius: 34px;
+                font-size: 0;
+                >text {
+                  display: inline-block;
+                  color: #fff;
+                  font-size: 20px;
+                  font-weight: bold;
+                  line-height: 34px;
+                  text-indent: 34px;
+                  &:last-child {
+                    width: 34px;
+                    line-height: 34px;
+                    border-radius: 34px;
+                    background: #FA9730;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    text-align: center;
+                    text-indent: 0;
+                  }
+                }
+              }
+              >.Num {
+                font-size: 0;
+                white-space: nowrap;
+                text-align: center;
+                margin: 30px auto 42px;
+                >text {
+                  display: inline-block;
+                  vertical-align: middle;
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #333;
+                  line-height: 1;
+                }
+              }
+            }
+          }
+        }
+        &.SaleNews {
+          >.Top {
+            align-items: center;
+            margin-top: 40px;
+            padding: 0 20px;
+            >text {
+              font-size: 24px;
+              color: #333;
+              &:first-child {
+                font-size: 34px;
+                font-weight: bold;
+                line-height: 1;
+              }
+            }
+            >image {
+              height: 34px;
+              margin-left: 30px;
+            }
+          }
+          >.List {
+            padding: 0 20px;
+            >view {
+              align-items: center;
+              border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+              padding: 30px 0;
+              margin-top: 20px;
+              &:last-child {
+                border-bottom: none;
+              }
+              >text {
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 1;
+                color: #193C83;
+                &.iconfont {
+                  font-weight: normal;
+                }
+                &:first-child {
+                  color: #333;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

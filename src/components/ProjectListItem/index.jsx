@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import './index.scss'
+import Taro from '@tarojs/taro'
 
 export default function ProjectListItem (props) {
   const { Data = {} } = props
   return (
-    <view className='components ProjectListItem flex-h'>
+    <view className='components ProjectListItem flex-h' onClick={() => {Taro.navigateTo({ url: `/pages/index/buildingDetail/index?id=${Data.id}` })}}>
       <view className='Img'>
         <view>
           {

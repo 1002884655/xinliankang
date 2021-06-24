@@ -3,6 +3,7 @@ import withLayout from '@/layout'
 import './index.scss'
 import { ScrollView } from '@tarojs/components'
 import '../../../assets/css/iconfont.css'
+import NewsListItem from '../components/NewsListItem/index'
 
 export default withLayout((props) => {
 
@@ -30,7 +31,11 @@ export default withLayout((props) => {
       <ScrollView scroll-y={true} refresher-enabled={true} refresher-triggered={IsPull} onrefresherrefresh={PageRefresh} refresher-background='#fff'>
         <view className='PageContent'>
 
-          新闻资讯
+          {
+            PageList.map((item, index) => (
+              <NewsListItem></NewsListItem>
+            ))
+          }
 
           {/* bottom */}
           <view className='PageBottom'>

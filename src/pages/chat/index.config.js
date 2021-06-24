@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '聊天'
+  navigationBarTitleText: '聊天记录'
 }

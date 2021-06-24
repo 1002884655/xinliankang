@@ -29,7 +29,7 @@ export default {
       },
       {
         pagePath: "pages/chat/index",
-        text: "聊天",
+        text: "消息",
         iconPath: './assets/tabbar/chat1.png',
         selectedIconPath: './assets/tabbar/chat2.png',
       },

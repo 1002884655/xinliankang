@@ -1,12 +1,71 @@
 .Page.buildingDetail {
-  background: #fff;
-  > scroll-view {
-    width: 100%;
-    height: 100%;
-    .PageContent {
-      position: relative;
-      overflow: hidden;
-      min-height: 100vh;
+  background: #f8f8f8;
+  > .flex-item {
+    position: relative;
+    overflow: hidden;
+    > view {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      > scroll-view {
+        width: 100%;
+        height: 100%;
+        .PageContent {
+          position: relative;
+          overflow: hidden;
+          min-height: 100vh;
+          > .BannerContainer {
+            width: 100%;
+            position: fixed;
+            overflow: hidden;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            > view {
+              width: 100%;
+              padding-bottom: 80%;
+              position: relative;
+              overflow: hidden;
+              background: #eee;
+              > view {
+                width: 100%;
+                position: absolute;
+                overflow: hidden;
+                left: 0;
+                top: 0;
+                bottom: 0;
+              }
+            }
+          }
+          >.DetailContent {
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            margin-top: 71.5vw;
+            >view {
+              position: relative;
+              overflow: hidden;
+              background: #fff;
+              margin-top: 20px;
+              min-height: 60px;
+              &:first-child {
+                margin-top: 0;
+              }
+              &.BasicInfo {
+                border-radius: 40px 40px 0 0;
+                min-height: 200px;
+              }
+            }
+          }
+        }
+      }
     }
+  }
+  > .PageBottom {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.03);
   }
 }
