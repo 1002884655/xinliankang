@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "16036802",
+      "name": "电  话",
+      "font_class": "dianhua",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "17197131",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "7603903",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
       "icon_id": "9055670",
       "name": "勾",
       "font_class": "gou",

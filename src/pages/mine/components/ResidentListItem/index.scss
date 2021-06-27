@@ -1,0 +1,68 @@
+.components.ResidentListItem {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.03);
+  padding: 30px 20px 50px;
+  >.flex-h {
+    align-items: center;
+    >text {
+      font-size: 30px;
+      line-height: 60px;
+      color: #333;
+      &.Status {
+        width: 144px;
+        text-align: center;
+        background: #193C83;
+        border-radius: 60px;
+        color: #fff;
+      }
+      &.Type {
+        color: #193C83;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    }
+    >.flex-item {
+      margin-left: 20px;
+      >text {
+        display: block;
+        font-size: 30px;
+        line-height: 60px;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    >image {
+      height: 38px;
+      margin-left: 10px;
+    }
+  }
+  >.Opt {
+    font-size: 0;
+    white-space: nowrap;
+    text-align: right;
+    margin-top: 10px;
+    >text {
+      display: inline-block;
+      font-size: 30px;
+      line-height: 60px;
+      width: 144px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 60px;
+      margin-left: 30px;
+      border: 2px solid #B9B2B2;
+      background: #B9B2B2;
+      color: #fff;
+      &.active {
+        background: none;
+        border-color: #193C83;
+        color: #193C83;
+      }
+    }
+  }
+}

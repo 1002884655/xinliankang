@@ -213,6 +213,30 @@ const routes = [
     type: 'mine',
   },
   {
+    name: '驻场管理',
+    page: 'pages/mine/residentManager/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '确认到访',
+    page: 'pages/mine/sureVisit/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '变更交易节点',
+    page: 'pages/mine/changeVisit/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '盘客工具',
+    page: 'pages/mine/statCustomer/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
     name: '意见反馈',
     page: 'pages/mine/feedBack/index',
     pkg: 'main',

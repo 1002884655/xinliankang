@@ -38,7 +38,7 @@ const MineMenuList = {
       { name: '我的主页', icon: require('../../assets/mine-icon15.png'), router: '' },
       { name: '我的推广码', icon: require('../../assets/mine-icon14.png'), router: '' },
       { name: '客户分析', icon: require('../../assets/mine-icon5.png'), router: '' },
-      { name: '盘客工具', icon: require('../../assets/mine-icon6.png'), router: '' }
+      { name: '盘客工具', icon: require('../../assets/mine-icon6.png'), router: '/pages/mine/statCustomer/index' }
     ],
     [
       { name: '我的分享', icon: require('../../assets/mine-icon9.png'), router: '/pages/mine/myShare/index' },
@@ -55,7 +55,7 @@ const MineMenuList = {
   Resident: [ // 驻场管理
     [
       { name: '推荐客户', icon: require('../../assets/mine-icon8.png'), router: '/pages/mine/recommendUser/index' },
-      { name: '驻场管理', icon: require('../../assets/mine-icon17.png'), router: '' }
+      { name: '驻场管理', icon: require('../../assets/mine-icon17.png'), router: '/pages/mine/residentManager/index' }
     ],
     [
       { name: '我的客户', icon: require('../../assets/mine-icon11.png'), router: '/pages/mine/myCustomer/index' },
