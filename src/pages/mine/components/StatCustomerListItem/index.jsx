@@ -7,10 +7,10 @@ export default function StatCustomerListItem (props) {
   const { data = {}, showStatus = false } = props
   return (
     <view className='components StatCustomerListItem flex-h'>
-      <view className='Icon'>
+      <view className='Icon' onClick={() => { Taro.navigateTo({url: `/pages/mine/customerDetail/index?id=${data.id}`}) }}>
         <Image mode='scaleToFill' src={null}></Image>
       </view>
-      <view className='flex-item'>
+      <view className='flex-item' onClick={() => { Taro.navigateTo({url: `/pages/mine/customerDetail/index?id=${data.id}`}) }}>
         <view>
           <text>范丞丞</text>
           <text className='iconfont icon-yonghu'></text>
@@ -21,7 +21,7 @@ export default function StatCustomerListItem (props) {
       <text className='iconfont icon-dianhua active'></text>
       {
         showStatus &&
-        <text className='Status'>报备</text>
+        <text className='Status' onClick={() => { Taro.navigateTo({url: `/pages/mine/customerDetail/index?id=${data.id}`}) }}>报备</text>
       }
     </view>
   )

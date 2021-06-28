@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "18609904",
+      "name": "编 辑",
+      "font_class": "xiugai",
+      "unicode": "e745",
+      "unicode_decimal": 59205
+    },
+    {
+      "icon_id": "7934584",
+      "name": "女性",
+      "font_class": "nvxing",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "21849876",
+      "name": "男性",
+      "font_class": "nanxing",
+      "unicode": "e713",
+      "unicode_decimal": 59155
+    },
+    {
       "icon_id": "16036802",
       "name": "电  话",
       "font_class": "dianhua",

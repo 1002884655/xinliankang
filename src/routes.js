@@ -237,6 +237,18 @@ const routes = [
     type: 'mine',
   },
   {
+    name: '客户信息',
+    page: 'pages/mine/customerDetail/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '客户分析',
+    page: 'pages/mine/customerAnalyse/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
     name: '意见反馈',
     page: 'pages/mine/feedBack/index',
     pkg: 'main',

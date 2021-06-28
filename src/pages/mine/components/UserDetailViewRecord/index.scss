@@ -1,0 +1,84 @@
+.components.UserDetailViewRecord {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  > scroll-view {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .PageContent {
+      position: relative;
+      overflow: hidden;
+      padding: 0 30px;
+      min-height: 100vh;
+      >.Content {
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        margin-top: 30px;
+        border-radius: 16px;
+        box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.03);
+        padding: 30px;
+        >.flex-h {
+          align-items: flex-start;
+          margin-top: 30px;
+          &:first-child {
+            margin-top: 0;
+          }
+          >text {
+            font-size: 24px;
+            line-height: 40px;
+            color: #333;
+            &:first-child {
+              font-size: 30px;
+              min-width: 200px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              text-align: justify;
+              text-align-last: justify;
+            }
+            &.active {
+              color: #193C83;
+              font-weight: bold;
+              font-size: 32px;
+              &.iconfont {
+                font-weight: normal;
+                margin-right: 6px;
+                font-size: 36px;
+              }
+            }
+          }
+          >.flex-item {
+            >text {
+              font-size: 30px;
+              line-height: 40px;
+              font-weight: bold;
+              color: #333;
+              display: block;
+            }
+          }
+        }
+      }
+      >.Btn {
+        padding: 0 30px 36px;
+        >text {
+          display: block;
+          margin-top: 36px;
+          font-size: 32px;
+          font-weight: bold;
+          line-height: 92px;
+          box-sizing: border-box;
+          border: 2px solid #193C83;
+          border-radius: 92px;
+          text-align: center;
+          color: #193C83;
+          &.active {
+            background: #193C83;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

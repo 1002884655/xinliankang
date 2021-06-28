@@ -37,7 +37,7 @@ const MineMenuList = {
       { name: '添加客户', icon: require('../../assets/mine-icon7.png'), router: '/pages/mine/addCustomer/index' },
       { name: '我的主页', icon: require('../../assets/mine-icon15.png'), router: '' },
       { name: '我的推广码', icon: require('../../assets/mine-icon14.png'), router: '' },
-      { name: '客户分析', icon: require('../../assets/mine-icon5.png'), router: '' },
+      { name: '客户分析', icon: require('../../assets/mine-icon5.png'), router: '/pages/mine/customerAnalyse/index' },
       { name: '盘客工具', icon: require('../../assets/mine-icon6.png'), router: '/pages/mine/statCustomer/index' }
     ],
     [
