@@ -249,6 +249,18 @@ const routes = [
     type: 'mine',
   },
   {
+    name: '房贷计算器',
+    page: 'pages/mine/mortgageCalc/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
+    name: '个人主页',
+    page: 'pages/mine/myHomepage/index',
+    pkg: 'main',
+    type: 'mine',
+  },
+  {
     name: '意见反馈',
     page: 'pages/mine/feedBack/index',
     pkg: 'main',

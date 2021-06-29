@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "8353259",
+      "name": "关  闭",
+      "font_class": "guanbi",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "11747664",
+      "name": "人气",
+      "font_class": "renqi",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "12542410",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
       "icon_id": "18609904",
       "name": "编 辑",
       "font_class": "xiugai",

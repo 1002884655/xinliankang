@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import './index.scss'
 import Taro from '@tarojs/taro'
 import { ScrollView, Image } from '@tarojs/components'
+import EditUserDetailBasicInfo from '../EditUserDetailBasicInfo/index'
 
 export default function UserDetailBasicInfo (props) {
   const { Data = {} } = props
-  const [PageList, setPageList] = useState(['', '', '', '', '', '', '', '', '', '', '', '', ''])
+  const [ShowEditPopup, setShowEditPopup] = useState(false)
   const [IsPull, setPull] = useState(false)
   const [PullTimer, setPullTimer] = useState(null)
 
@@ -34,8 +35,8 @@ export default function UserDetailBasicInfo (props) {
               <view className='flex-item'>
                 <text>范丞丞</text>
               </view>
-              <text className='iconfont icon-xiugai active'></text>
-              <text className='active'>修改</text>
+              <text className='iconfont icon-xiugai active' onClick={() => {setShowEditPopup(true)}}></text>
+              <text className='active' onClick={() => {setShowEditPopup(true)}}>修改</text>
             </view>
             <view className='flex-h'>
               <text>昵称</text>
@@ -165,6 +166,16 @@ export default function UserDetailBasicInfo (props) {
 
         </view>
       </ScrollView>
+      {
+        ShowEditPopup &&
+        <view className='EditUserInfo'>
+          <view>
+            <view>
+              <EditUserDetailBasicInfo close={() => {setShowEditPopup(false)}}></EditUserDetailBasicInfo>
+            </view>
+          </view>
+        </view>
+      }
     </view>
   )
 }

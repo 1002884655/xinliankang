@@ -9,7 +9,7 @@ const MineMenuList = {
       { name: '我的收藏', icon: require('../../assets/mine-icon13.png'), router: '/pages/mine/myCollect/index' }
     ],
     [
-      { name: '房贷计算器', icon: require('../../assets/mine-icon4.png'), router: '' },
+      { name: '房贷计算器', icon: require('../../assets/mine-icon4.png'), router: '/pages/mine/mortgageCalc/index' },
       { name: '购房百科', icon: require('../../assets/mine-icon2.png'), router: '/pages/index/encyclopediasOfBuyHouse/index' },
       { name: '意见反馈', icon: require('../../assets/mine-icon16.png'), router: '/pages/mine/feedBack/index' }
     ]
@@ -27,7 +27,7 @@ const MineMenuList = {
       { name: '我的收藏', icon: require('../../assets/mine-icon13.png'), router: '/pages/mine/myCollect/index' }
     ],
     [
-      { name: '房贷计算器', icon: require('../../assets/mine-icon4.png'), router: '' },
+      { name: '房贷计算器', icon: require('../../assets/mine-icon4.png'), router: '/pages/mine/mortgageCalc/index' },
       { name: '购房百科', icon: require('../../assets/mine-icon2.png'), router: '/pages/index/encyclopediasOfBuyHouse/index' },
       { name: '意见反馈', icon: require('../../assets/mine-icon16.png'), router: '/pages/mine/feedBack/index' }
     ]
@@ -35,7 +35,7 @@ const MineMenuList = {
   Adviser: [ // 置业顾问
     [
       { name: '添加客户', icon: require('../../assets/mine-icon7.png'), router: '/pages/mine/addCustomer/index' },
-      { name: '我的主页', icon: require('../../assets/mine-icon15.png'), router: '' },
+      { name: '我的主页', icon: require('../../assets/mine-icon15.png'), router: '/pages/mine/myHomepage/index' },
       { name: '我的推广码', icon: require('../../assets/mine-icon14.png'), router: '' },
       { name: '客户分析', icon: require('../../assets/mine-icon5.png'), router: '/pages/mine/customerAnalyse/index' },
       { name: '盘客工具', icon: require('../../assets/mine-icon6.png'), router: '/pages/mine/statCustomer/index' }
@@ -47,7 +47,7 @@ const MineMenuList = {
       { name: '我的收藏', icon: require('../../assets/mine-icon13.png'), router: '/pages/mine/myCollect/index' }
     ],
     [
-      { name: '房贷计算器', icon: require('../../assets/mine-icon4.png'), router: '' },
+      { name: '房贷计算器', icon: require('../../assets/mine-icon4.png'), router: '/pages/mine/mortgageCalc/index' },
       { name: '购房百科', icon: require('../../assets/mine-icon2.png'), router: '/pages/index/encyclopediasOfBuyHouse/index' },
       { name: '意见反馈', icon: require('../../assets/mine-icon16.png'), router: '/pages/mine/feedBack/index' }
     ]
@@ -64,7 +64,7 @@ const MineMenuList = {
       { name: '我的收藏', icon: require('../../assets/mine-icon13.png'), router: '/pages/mine/myCollect/index' }
     ],
     [
-      { name: '房贷计算器', icon: require('../../assets/mine-icon4.png'), router: '' },
+      { name: '房贷计算器', icon: require('../../assets/mine-icon4.png'), router: '/pages/mine/mortgageCalc/index' },
       { name: '购房百科', icon: require('../../assets/mine-icon2.png'), router: '/pages/index/encyclopediasOfBuyHouse/index' },
       { name: '意见反馈', icon: require('../../assets/mine-icon16.png'), router: '/pages/mine/feedBack/index' }
     ]

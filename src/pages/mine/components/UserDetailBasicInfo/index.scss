@@ -80,4 +80,26 @@
       }
     }
   }
+  >.EditUserInfo {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.6);
+    >view {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 60px;
+      >view{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+      }
+    }
+  }
 }
