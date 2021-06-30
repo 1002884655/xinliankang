@@ -10,6 +10,7 @@ import ColumnTitle from './components/ColumnTitle/index'
 import ProjectListItem from '../../components/ProjectListItem/index'
 import { ScrollView } from '@tarojs/components'
 import Taro from '@tarojs/taro'
+import { connect } from '@tarojs/redux'
 
 export default withLayout((props) => {
 
